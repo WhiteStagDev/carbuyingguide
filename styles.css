@@ -623,10 +623,6 @@ aside button {
     font-size: 0.95rem;
   }
 
-  .feature-grid {
-    display: hidden;
-  }
-
   .page-layout {
     grid-template-columns: 1fr;
     grid-template-areas: 
@@ -639,5 +635,74 @@ aside button {
     max-width: 20rem;
     height: auto;
   }
+
+
+  #label-feature {
+    display: none;
+  }
+  #cyl4-fuel::after {
+    content: ": 4-Cylinder";
+  }
+  #cyl6-fuel::after {
+    content: ": 6-Cylinder";
+  }
+
+  #cyl4-speed::after {
+    content: ": 4-Cylinder";
+  }
+  #cyl6-speed::after {
+    content: ": 6-Cylinder";
+  }
+
+  #cyl4-towing::after {
+    content: ": 4-Cylinder";
+  }
+  #cyl6-towing::after {
+    content: ": 6-Cylinder";
+  }
+
+  #cyl4-maintenance::after {
+    content: ": 4-Cylinder";
+  }
+  #cyl6-maintenance::after {
+    content: ": 6-Cylinder";
+  }
+
+  #cyl4-vibe::after {
+    content: ": V4";
+  }
+  #cyl6-vibe::after {
+    content: ": V6";
+  }
+
+  .feature-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "label-feature"
+    "label-cyl4"
+    "label-cyl6"
+    "feat-fuel"
+    "cyl4-fuel"
+    "cyl6-fuel"
+    "feat-speed"
+    "cyl4-speed"
+    "cyl6-speed"
+    "feat-towing"
+    "cyl4-towing"
+    "cyl6-towing"
+    "feat-maintenance"
+    "cyl4-maintenance"
+    "cyl6-maintenance"
+    "feat-vibe"
+    "cyl4-vibe"
+    "cyl6-vibe";
+  gap: 0.5rem;
+  background-color: #e8f0fe;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
 
 }
